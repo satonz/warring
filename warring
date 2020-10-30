@@ -1,0 +1,993 @@
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/StatepointLowering.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfAccelTable.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfAccelTable.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<void*, long unsigned int>]’:
+/root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:241:33:   required from ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::Allocate(size_t, size_t) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; size_t = long unsigned int]’
+/root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:432:71:   required from ‘void* operator new(size_t, llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>&) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; size_t = long unsigned int]’
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:634:39:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<void*, long unsigned int>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfAccelTable.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfAccelTable.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<void*, long unsigned int>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfAccelTable.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfAccelTable.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘static void llvm::SmallVectorTemplateBase<T, true>::uninitialized_copy(T1*, T1*, T2*, typename std::enable_if<std::is_same<typename std::remove_const<T1>::type, T2>::value>::type*) [with T1 = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; T2 = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; typename std::enable_if<std::is_same<typename std::remove_const<T1>::type, T2>::value>::type = void]’:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:399:5:   required from ‘void llvm::SmallVectorImpl<T>::append(in_iter, in_iter) [with in_iter = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>*; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>]’
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:858:5:   required from ‘llvm::SmallVector<T, N>::SmallVector(ItTy, ItTy) [with ItTy = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>*; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; unsigned int N = 2]’
+/root/fio/2.0/opt/llvm/include/llvm/MC/MCFragment.h:546:42:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:296:13: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+       memcpy(Dest, I, (E - I) * sizeof(T));
+       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfAccelTable.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfAccelTable.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>’ declared here
+     struct pair
+            ^~~~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp: In function ‘bool isVectorReductionOp(const llvm::User*)’:
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp:2450:14: warning: this statement may fall through [-Wimplicit-fallthrough=]
+         break;
+              ^
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp:2452:3: note: here
+   default:
+   ^~~~~~~
+[ 36%] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DwarfCFIException.cpp.o
+cd /root/fio/2.0/opt/llvm/build/lib/CodeGen/AsmPrinter && /opt/rh/devtoolset-8/root/usr/bin/g++  -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/fio/2.0/opt/llvm/build/lib/CodeGen/AsmPrinter -I/root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter -I/root/fio/2.0/opt/llvm/build/include -I/root/fio/2.0/opt/llvm/include  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -Werror=date-time -std=c++11 -ffunction-sections -fdata-sections -O3 -DNDEBUG    -fno-exceptions -o CMakeFiles/LLVMAsmPrinter.dir/DwarfCFIException.cpp.o -c /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCFIException.cpp
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/EHStreamer.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfException.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCFIException.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<int, long int>]’:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/MachineFrameInfo.h:342:77:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<int, long int>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/EHStreamer.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfException.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCFIException.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<int, long int>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/EHStreamer.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfException.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCFIException.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<std::pair<llvm::MCSection*, const llvm::MCExpr*>, std::pair<llvm::MCSection*, const llvm::MCExpr*> >]’:
+/root/fio/2.0/opt/llvm/include/llvm/MC/MCStreamer.h:326:66:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<std::pair<llvm::MCSection*, const llvm::MCExpr*>, std::pair<llvm::MCSection*, const llvm::MCExpr*> >’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/EHStreamer.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfException.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCFIException.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<std::pair<llvm::MCSection*, const llvm::MCExpr*>, std::pair<llvm::MCSection*, const llvm::MCExpr*> >’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/EHStreamer.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfException.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCFIException.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<void*, long unsigned int>]’:
+/root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:241:33:   required from ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::Allocate(size_t, size_t) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; size_t = long unsigned int]’
+/root/fio/2.0/opt/llvm/include/llvm/MC/MCContext.h:548:44:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<void*, long unsigned int>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/EHStreamer.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfException.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCFIException.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<void*, long unsigned int>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/EHStreamer.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfException.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCFIException.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘static void llvm::SmallVectorTemplateBase<T, true>::uninitialized_copy(T1*, T1*, T2*, typename std::enable_if<std::is_same<typename std::remove_const<T1>::type, T2>::value>::type*) [with T1 = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; T2 = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; typename std::enable_if<std::is_same<typename std::remove_const<T1>::type, T2>::value>::type = void]’:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:399:5:   required from ‘void llvm::SmallVectorImpl<T>::append(in_iter, in_iter) [with in_iter = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>*; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>]’
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:858:5:   required from ‘llvm::SmallVector<T, N>::SmallVector(ItTy, ItTy) [with ItTy = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>*; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; unsigned int N = 2]’
+/root/fio/2.0/opt/llvm/include/llvm/MC/MCFragment.h:546:42:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:296:13: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+       memcpy(Dest, I, (E - I) * sizeof(T));
+       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/EHStreamer.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfException.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCFIException.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>’ declared here
+     struct pair
+            ^~~~
+[ 36%] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DwarfCompileUnit.cpp.o
+cd /root/fio/2.0/opt/llvm/build/lib/CodeGen/AsmPrinter && /opt/rh/devtoolset-8/root/usr/bin/g++  -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/fio/2.0/opt/llvm/build/lib/CodeGen/AsmPrinter -I/root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter -I/root/fio/2.0/opt/llvm/build/include -I/root/fio/2.0/opt/llvm/include  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -Werror=date-time -std=c++11 -ffunction-sections -fdata-sections -O3 -DNDEBUG    -fno-exceptions -o CMakeFiles/LLVMAsmPrinter.dir/DwarfCompileUnit.cpp.o -c /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.cpp
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Target/TargetSubtargetInfo.h:21,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.cpp:15:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/SchedulerRegistry.h: In constructor ‘llvm::RegisterScheduler::RegisterScheduler(const char*, const char*, llvm::RegisterScheduler::FunctionPassCtor)’:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/SchedulerRegistry.h:42:52: warning: cast between incompatible function types from ‘llvm::RegisterScheduler::FunctionPassCtor’ {aka ‘llvm::ScheduleDAGSDNodes* (*)(llvm::SelectionDAGISel*, llvm::CodeGenOpt::Level)’} to ‘llvm::MachinePassCtor’ {aka ‘void* (*)()’} [-Wcast-function-type]
+   : MachinePassRegistryNode(N, D, (MachinePassCtor)C)
+                                                    ^
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.cpp:1:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<const llvm::MachineInstr*, const llvm::MachineInstr*>]’:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/LexicalScopes.h:93:52:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<const llvm::MachineInstr*, const llvm::MachineInstr*>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.cpp:1:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<const llvm::MachineInstr*, const llvm::MachineInstr*>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.cpp:1:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<std::pair<llvm::MCSection*, const llvm::MCExpr*>, std::pair<llvm::MCSection*, const llvm::MCExpr*> >]’:
+/root/fio/2.0/opt/llvm/include/llvm/MC/MCStreamer.h:326:66:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<std::pair<llvm::MCSection*, const llvm::MCExpr*>, std::pair<llvm::MCSection*, const llvm::MCExpr*> >’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.cpp:1:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<std::pair<llvm::MCSection*, const llvm::MCExpr*>, std::pair<llvm::MCSection*, const llvm::MCExpr*> >’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.cpp:1:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<void*, long unsigned int>]’:
+/root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:241:33:   required from ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::Allocate(size_t, size_t) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; size_t = long unsigned int]’
+/root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:432:71:   required from ‘void* operator new(size_t, llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>&) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; size_t = long unsigned int]’
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:634:39:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<void*, long unsigned int>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.cpp:1:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<void*, long unsigned int>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.cpp:1:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘static void llvm::SmallVectorTemplateBase<T, true>::uninitialized_copy(T1*, T1*, T2*, typename std::enable_if<std::is_same<typename std::remove_const<T1>::type, T2>::value>::type*) [with T1 = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; T2 = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; typename std::enable_if<std::is_same<typename std::remove_const<T1>::type, T2>::value>::type = void]’:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:399:5:   required from ‘void llvm::SmallVectorImpl<T>::append(in_iter, in_iter) [with in_iter = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>*; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>]’
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:858:5:   required from ‘llvm::SmallVector<T, N>::SmallVector(ItTy, ItTy) [with ItTy = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>*; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; unsigned int N = 2]’
+/root/fio/2.0/opt/llvm/include/llvm/MC/MCFragment.h:546:42:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:296:13: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+       memcpy(Dest, I, (E - I) * sizeof(T));
+       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.cpp:1:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DIEHash.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/ByteStreamer.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DebugLocStream.h:15,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:19,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfCompileUnit.cpp:1:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def: In member function ‘void llvm::DIEValue::destroyVal()’:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:386:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<DIE##T>();
+     ~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:34:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Integer)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:385:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:35:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(String)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:386:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<DIE##T>();
+     ~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:35:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(String)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:385:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:36:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Expr)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:386:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<DIE##T>();
+     ~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:36:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Expr)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:385:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:37:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Label)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:386:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<DIE##T>();
+     ~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:37:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Label)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:389:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:38:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(Delta)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:390:29: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<const DIE##T *>();
+     ~~~~~~~~~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:38:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(Delta)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:385:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:39:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Entry)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:386:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<DIE##T>();
+     ~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:39:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Entry)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:389:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:40:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(Block)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:390:29: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<const DIE##T *>();
+     ~~~~~~~~~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:40:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(Block)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:389:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:41:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(Loc)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:390:29: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<const DIE##T *>();
+     ~~~~~~~~~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:41:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(Loc)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:385:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:42:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(LocList)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:386:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<DIE##T>();
+     ~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:42:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(LocList)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:389:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:43:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(InlineString)
+ ^~~~~~~~~~~~~~~~~~~~~
+[ 36%] Building CXX object lib/CodeGen/AsmPrinter/CMakeFiles/LLVMAsmPrinter.dir/DwarfDebug.cpp.o
+cd /root/fio/2.0/opt/llvm/build/lib/CodeGen/AsmPrinter && /opt/rh/devtoolset-8/root/usr/bin/g++  -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/fio/2.0/opt/llvm/build/lib/CodeGen/AsmPrinter -I/root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter -I/root/fio/2.0/opt/llvm/build/include -I/root/fio/2.0/opt/llvm/include  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -Werror=date-time -std=c++11 -ffunction-sections -fdata-sections -O3 -DNDEBUG    -fno-exceptions -o CMakeFiles/LLVMAsmPrinter.dir/DwarfDebug.cpp.o -c /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.cpp
+[ 36%] Building CXX object lib/CodeGen/SelectionDAG/CMakeFiles/LLVMSelectionDAG.dir/SelectionDAG.cpp.o
+cd /root/fio/2.0/opt/llvm/build/lib/CodeGen/SelectionDAG && /opt/rh/devtoolset-8/root/usr/bin/g++  -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/root/fio/2.0/opt/llvm/build/lib/CodeGen/SelectionDAG -I/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG -I/root/fio/2.0/opt/llvm/build/include -I/root/fio/2.0/opt/llvm/include  -fPIC -fvisibility-inlines-hidden -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wno-maybe-uninitialized -Wdelete-non-virtual-dtor -Wno-comment -Werror=date-time -std=c++11 -ffunction-sections -fdata-sections -O3 -DNDEBUG    -fno-exceptions -o CMakeFiles/LLVMSelectionDAG.dir/SelectionDAG.cpp.o -c /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Target/TargetSubtargetInfo.h:21,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.cpp:55:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/SchedulerRegistry.h: In constructor ‘llvm::RegisterScheduler::RegisterScheduler(const char*, const char*, llvm::RegisterScheduler::FunctionPassCtor)’:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/SchedulerRegistry.h:42:52: warning: cast between incompatible function types from ‘llvm::RegisterScheduler::FunctionPassCtor’ {aka ‘llvm::ScheduleDAGSDNodes* (*)(llvm::SelectionDAGISel*, llvm::CodeGenOpt::Level)’} to ‘llvm::MachinePassCtor’ {aka ‘void* (*)()’} [-Wcast-function-type]
+   : MachinePassRegistryNode(N, D, (MachinePassCtor)C)
+                                                    ^
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<const llvm::MachineInstr*, const llvm::MachineInstr*>]’:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/LexicalScopes.h:93:52:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<const llvm::MachineInstr*, const llvm::MachineInstr*>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<const llvm::MachineInstr*, const llvm::MachineInstr*>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<std::pair<llvm::MCSection*, const llvm::MCExpr*>, std::pair<llvm::MCSection*, const llvm::MCExpr*> >]’:
+/root/fio/2.0/opt/llvm/include/llvm/MC/MCStreamer.h:326:66:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<std::pair<llvm::MCSection*, const llvm::MCExpr*>, std::pair<llvm::MCSection*, const llvm::MCExpr*> >’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<std::pair<llvm::MCSection*, const llvm::MCExpr*>, std::pair<llvm::MCSection*, const llvm::MCExpr*> >’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<void*, long unsigned int>]’:
+/root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:241:33:   required from ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::Allocate(size_t, size_t) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; size_t = long unsigned int]’
+/root/fio/2.0/opt/llvm/include/llvm/MC/MCContext.h:548:44:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<void*, long unsigned int>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<void*, long unsigned int>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘static void llvm::SmallVectorTemplateBase<T, true>::uninitialized_copy(T1*, T1*, T2*, typename std::enable_if<std::is_same<typename std::remove_const<T1>::type, T2>::value>::type*) [with T1 = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; T2 = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; typename std::enable_if<std::is_same<typename std::remove_const<T1>::type, T2>::value>::type = void]’:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:399:5:   required from ‘void llvm::SmallVectorImpl<T>::append(in_iter, in_iter) [with in_iter = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>*; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>]’
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:858:5:   required from ‘llvm::SmallVector<T, N>::SmallVector(ItTy, ItTy) [with ItTy = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>*; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; unsigned int N = 2]’
+/root/fio/2.0/opt/llvm/include/llvm/MC/MCFragment.h:546:42:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:296:13: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+       memcpy(Dest, I, (E - I) * sizeof(T));
+       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/MapVector.h:20,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DbgValueHistoryCalculator.h:13,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:17,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>’ declared here
+     struct pair
+            ^~~~
+^AIn file included from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DIEHash.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/ByteStreamer.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DebugLocStream.h:15,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.h:19,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def: In member function ‘void llvm::DIEValue::destroyVal()’:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:386:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<DIE##T>();
+     ~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:34:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Integer)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:385:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:35:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(String)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:386:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<DIE##T>();
+     ~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:35:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(String)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:385:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:36:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Expr)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:386:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<DIE##T>();
+     ~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:36:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Expr)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:385:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:37:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Label)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:386:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<DIE##T>();
+     ~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:37:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Label)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:389:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:38:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(Delta)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:390:29: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<const DIE##T *>();
+     ~~~~~~~~~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:38:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(Delta)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:385:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:39:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Entry)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:386:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<DIE##T>();
+     ~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:39:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(Entry)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:389:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:40:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(Block)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:390:29: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<const DIE##T *>();
+     ~~~~~~~~~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:40:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(Block)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:389:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:41:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(Loc)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:390:29: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<const DIE##T *>();
+     ~~~~~~~~~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:41:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(Loc)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:385:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:42:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(LocList)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:386:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     destruct<DIE##T>();
+     ~~~~~~~~~~~~~~~~^~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:42:1: note: in expansion of macro ‘HANDLE_DIEVALUE_SMALL’
+ HANDLE_DIEVALUE_SMALL(LocList)
+ ^~~~~~~~~~~~~~~~~~~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIE.h:389:3: note: here
+   case is##T:                                                                  \
+   ^~~~
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/DIEValue.def:43:1: note: in expansion of macro ‘HANDLE_DIEVALUE_LARGE’
+ HANDLE_DIEVALUE_LARGE(InlineString)
+ ^~~~~~~~~~~~~~~~~~~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Target/TargetSubtargetInfo.h:21,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:49:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/SchedulerRegistry.h: In constructor ‘llvm::RegisterScheduler::RegisterScheduler(const char*, const char*, llvm::RegisterScheduler::FunctionPassCtor)’:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/SchedulerRegistry.h:42:52: warning: cast between incompatible function types from ‘llvm::RegisterScheduler::FunctionPassCtor’ {aka ‘llvm::ScheduleDAGSDNodes* (*)(llvm::SelectionDAGISel*, llvm::CodeGenOpt::Level)’} to ‘llvm::MachinePassCtor’ {aka ‘void* (*)()’} [-Wcast-function-type]
+   : MachinePassRegistryNode(N, D, (MachinePassCtor)C)
+                                                    ^
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseSet.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/CodeGen/SelectionDAG.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<int, long int>]’:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/MachineFrameInfo.h:342:77:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<int, long int>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseSet.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/CodeGen/SelectionDAG.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<int, long int>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseSet.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/CodeGen/SelectionDAG.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<llvm::SlotIndex, llvm::SlotIndex>]’:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/SlotIndexes.h:665:59:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<llvm::SlotIndex, llvm::SlotIndex>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseSet.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/CodeGen/SelectionDAG.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<llvm::SlotIndex, llvm::SlotIndex>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseSet.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/CodeGen/SelectionDAG.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<llvm::SlotIndex, llvm::MachineBasicBlock*>]’:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/SlotIndexes.h:666:53:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<llvm::SlotIndex, llvm::MachineBasicBlock*>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseSet.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/CodeGen/SelectionDAG.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<llvm::SlotIndex, llvm::MachineBasicBlock*>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseSet.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/CodeGen/SelectionDAG.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<unsigned int, unsigned int>]’:
+/root/fio/2.0/opt/llvm/include/llvm/CodeGen/LiveIntervalAnalysis.h:247:69:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<unsigned int, unsigned int>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseSet.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/CodeGen/SelectionDAG.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<unsigned int, unsigned int>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseSet.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/CodeGen/SelectionDAG.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘void llvm::SmallVectorTemplateBase<T, true>::push_back(const T&) [with T = std::pair<void*, long unsigned int>]’:
+/root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:241:33:   required from ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::Allocate(size_t, size_t) [with AllocatorT = llvm::MallocAllocator; long unsigned int SlabSize = 4096; long unsigned int SizeThreshold = 4096; size_t = long unsigned int]’
+/root/fio/2.0/opt/llvm/include/llvm/MC/MCContext.h:548:44:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:309:11: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<void*, long unsigned int>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+     memcpy(this->end(), &Elt, sizeof(T));
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseSet.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/CodeGen/SelectionDAG.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<void*, long unsigned int>’ declared here
+     struct pair
+            ^~~~
+In file included from /root/fio/2.0/opt/llvm/include/llvm/Support/Allocator.h:24,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:18,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseSet.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/CodeGen/SelectionDAG.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:14:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h: In instantiation of ‘static void llvm::SmallVectorTemplateBase<T, true>::uninitialized_copy(T1*, T1*, T2*, typename std::enable_if<std::is_same<typename std::remove_const<T1>::type, T2>::value>::type*) [with T1 = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; T2 = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; typename std::enable_if<std::is_same<typename std::remove_const<T1>::type, T2>::value>::type = void]’:
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:399:5:   required from ‘void llvm::SmallVectorImpl<T>::append(in_iter, in_iter) [with in_iter = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>*; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>]’
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:858:5:   required from ‘llvm::SmallVector<T, N>::SmallVector(ItTy, ItTy) [with ItTy = const std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>*; T = std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>; unsigned int N = 2]’
+/root/fio/2.0/opt/llvm/include/llvm/MC/MCFragment.h:546:42:   required from here
+/root/fio/2.0/opt/llvm/include/llvm/ADT/SmallVector.h:296:13: warning: ‘void* memcpy(void*, const void*, size_t)’ writing to an object of type ‘struct std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>’ with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
+       memcpy(Dest, I, (E - I) * sizeof(T));
+       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rh/devtoolset-8/root/usr/include/c++/8/utility:70,
+                 from /opt/rh/devtoolset-8/root/usr/include/c++/8/algorithm:60,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/STLExtras.h:20,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/StringMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/Support/Host.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/Hashing.h:49,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/ArrayRef.h:13,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseMap.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/ADT/DenseSet.h:17,
+                 from /root/fio/2.0/opt/llvm/include/llvm/CodeGen/SelectionDAG.h:18,
+                 from /root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:14:
+/opt/rh/devtoolset-8/root/usr/include/c++/8/bits/stl_pair.h:208:12: note: ‘struct std::pair<const llvm::MCSymbol*, const llvm::MCSymbol*>’ declared here
+     struct pair
+            ^~~~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp: In member function ‘llvm::SDValue llvm::SelectionDAG::FoldSetCC(llvm::EVT, llvm::SDValue, llvm::SDValue, llvm::ISD::CondCode, const llvm::SDLoc&)’:
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:1898:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+       case ISD::SETEQ:  if (R==APFloat::cmpUnordered)
+                         ^~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:1901:7: note: here
+       case ISD::SETOEQ: return getConstant(R==APFloat::cmpEqual, dl, VT);
+       ^~~~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:1902:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+       case ISD::SETNE:  if (R==APFloat::cmpUnordered)
+                         ^~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:1905:7: note: here
+       case ISD::SETONE: return getConstant(R==APFloat::cmpGreaterThan ||
+       ^~~~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:1907:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+       case ISD::SETLT:  if (R==APFloat::cmpUnordered)
+                         ^~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:1910:7: note: here
+       case ISD::SETOLT: return getConstant(R==APFloat::cmpLessThan, dl, VT);
+       ^~~~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:1911:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+       case ISD::SETGT:  if (R==APFloat::cmpUnordered)
+                         ^~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:1914:7: note: here
+       case ISD::SETOGT: return getConstant(R==APFloat::cmpGreaterThan, dl, VT);
+       ^~~~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:1915:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+       case ISD::SETLE:  if (R==APFloat::cmpUnordered)
+                         ^~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:1918:7: note: here
+       case ISD::SETOLE: return getConstant(R==APFloat::cmpLessThan ||
+       ^~~~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:1920:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+       case ISD::SETGE:  if (R==APFloat::cmpUnordered)
+                         ^~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:1923:7: note: here
+       case ISD::SETOGE: return getConstant(R==APFloat::cmpGreaterThan ||
+       ^~~~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp: In member function ‘void llvm::SelectionDAG::computeKnownBits(llvm::SDValue, llvm::APInt&, llvm::APInt&, const llvm::APInt&, unsigned int) const’:
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:2506:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     LLVM_FALLTHROUGH;
+                     ^
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:2508:3: note: here
+   case ISD::ADD:
+   ^~~~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:2708:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     if (Opcode < ISD::BUILTIN_OP_END)
+     ^~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:2711:3: note: here
+   case ISD::INTRINSIC_WO_CHAIN:
+   ^~~~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp: In member function ‘llvm::SDValue llvm::SelectionDAG::getNode(unsigned int, const llvm::SDLoc&, llvm::EVT, llvm::SDValue, llvm::SDValue, const llvm::SDNodeFlags*)’:
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:4144:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
+       if (N1.isUndef())
+       ^~
+/root/fio/2.0/opt/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp:4149:5: note: here
+     case ISD::ADD:
+     ^~~~
